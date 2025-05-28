@@ -199,7 +199,7 @@ export function MainNav() {
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
             >
-              <span>CATEGORÍAS</span>
+              <span>Productos</span>
               <ChevronDown className="w-4 h-4" />
             </button>
 
