@@ -17,7 +17,7 @@ const slides = [
 
 export function AdsCarousel() {
   return (
-    <div className="w-full mx-auto h-[370px]">
+    <div className="w-full mx-auto h-[360px]">
       <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 3000 }}
