@@ -4,8 +4,8 @@ import { FacebookIcon, InstagramIcon, PinMapIcon, XIcon, YoutubeIcon } from "../
 export function Footer () {
   return (
     <footer className="bg-gray-800 text-white py-10 relative">
-      <div className="flex justify-around">
-        <div className="">
+      <div className="flex flex-col md:flex-row gap-6 md:justify-around px-12">
+        <div>
           <h1 className="font-extrabold text-3xl">ArgTech</h1>
         </div>
         <div>
@@ -47,7 +47,7 @@ export function Footer () {
           </ul>
         </div>
       </div>
-      <div className="flex gap-28 px-12 my-4">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-28 px-12 my-4">
         <div>
           <h4 className="font-bold text-xl">Seguinos en:</h4>
           <div className="flex items-center gap-4 py-1.5">

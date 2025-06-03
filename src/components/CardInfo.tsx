@@ -2,7 +2,7 @@ import { CardCreditIcon, TruckIcon } from "./icons/Iconos";
 
 export function CardInfo() {
   return (
-    <div className="flex justify-center my-16 gap-6">
+    <div className="flex flex-col md:flex-row items-center justify-center my-16 gap-6">
       <div className="bg-teal-900 px-6 py-4 rounded-2xl flex items-center justify-around gap-2.5 w-[300px]">
         <div className="bg-white p-2 rounded-full">
           <CardCreditIcon color="#003C43" height={40} width={40} />

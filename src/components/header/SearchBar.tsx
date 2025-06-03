@@ -2,7 +2,7 @@ import { SearchIcon } from "../icons/Iconos";
 
 export function SearchBar() {
   return (
-    <div className="flex items-center bg-gray-200 rounded-full border w-[350px]">
+    <div className="hidden md:flex items-center bg-gray-200 rounded-full border w-[350px]">
       <input
         type="text"
         placeholder="Search..."

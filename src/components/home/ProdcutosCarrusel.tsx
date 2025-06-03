@@ -20,14 +20,14 @@ export function ProductosCarrusel() {
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4">
-            <div className="border h-[410px] w-[220px] rounded-lg overflow-hidden">
-              <div className="bg-white h-[200px] flex items-center justify-center box-border">
+          <CarouselItem key={index} className="basis-1/2 md:basis-1/4">
+            <div className="border h-[370px] md:h-[410px] w-[220px] rounded-lg overflow-hidden">
+              <div className="bg-white h-[160px] md:h-[200px] flex items-center justify-center box-border">
                 <Image
                   src="/item1.webp"
                   alt="Imagen del producto"
-                  width={150}
-                  height={150}
+                  width={100}
+                  height={100}
                   className="object-contain" 
                 />
               </div>

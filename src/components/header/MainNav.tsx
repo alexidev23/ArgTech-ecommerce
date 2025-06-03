@@ -206,7 +206,7 @@ export function MainNav() {
             {/* Mega menú dropdown */}
             {isDropdownOpen && (
               <div
-                className="absolute top-full left-0 mt-0 bg-white border border-gray-200 shadow-xl rounded-lg z-50 w-[800px] max-h-[600px] overflow-y-auto"
+                className="absolute top-full left-0 mt-0 bg-white border border-gray-200 shadow-xl rounded-lg z-50 w-[400px] md:w-[800px] max-h-[650px] overflow-y-auto"
                 onMouseEnter={() => setIsDropdownOpen(true)}
                 onMouseLeave={() => setIsDropdownOpen(false)}
               >
@@ -230,39 +230,6 @@ export function MainNav() {
               </div>
             )}
           </div>
-        </div>
-      </div>
-
-      {/* Versión móvil */}
-      <div className="md:hidden">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <button
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-          >
-            <span>CATEGORÍAS</span>
-            <ChevronDown className={cn("w-4 h-4 transition-transform", isDropdownOpen && "rotate-180")} />
-          </button>
-
-          {isDropdownOpen && (
-            <div className="pl-4 space-y-2">
-              {categories.map((category) => (
-                <div key={category.id} className="space-y-2">
-                  <Link
-                    href={category.href}
-                    className="block px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-50"
-                  >
-                    {category.name}
-                  </Link>
-                  {category.subcategories && category.subcategories.length > 0 && (
-                    <div className="pl-4">
-                      <SubCategoryList subcategories={category.subcategories} />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       </div>
     </nav>
