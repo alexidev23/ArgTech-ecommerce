@@ -20,7 +20,7 @@ export function ProductosCarrusel() {
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-1/2 md:basis-1/4">
+          <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
             <div className="border h-[370px] md:h-[410px] w-[220px] rounded-lg overflow-hidden">
               <div className="bg-white h-[160px] md:h-[200px] flex items-center justify-center box-border">
                 <Image

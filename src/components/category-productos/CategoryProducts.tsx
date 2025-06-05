@@ -12,7 +12,7 @@ import { CartIcon } from "../icons/Iconos"
 
 export function CategoryProducts() {
   return (
-  <div className="my-10 w-full md:w-[1000px] mx-auto px-1.5">
+  <div className="my-10 w-full md:w-[700px] lg:w-[1000px] mx-auto px-1.5">
     <h2 className="text-3xl font-semibold mb-6">Celulares</h2>
     <Carousel
       opts={{
@@ -22,7 +22,7 @@ export function CategoryProducts() {
     >
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-1/2 lg:basis-1/4">
+          <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/4">
             <div className="border h-[370] md:h-[410px] w-[210px] md:w-[220px] rounded-lg overflow-hidden">
               <div className="bg-white h-[160px] md:h-[200px] flex items-center justify-center box-border">
                 <Image
