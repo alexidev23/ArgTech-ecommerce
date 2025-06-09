@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css";
 import { Header } from "@/components/header/Header";
 import { LinkWhatsapp } from "@/components/LinkWhatsapp";
+import { Footer } from "@/components/footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           <Header />
           {children}
           <LinkWhatsapp />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
